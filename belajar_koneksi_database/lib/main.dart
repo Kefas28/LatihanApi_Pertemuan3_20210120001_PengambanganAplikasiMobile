@@ -42,7 +42,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('LATIHAN API KEFAS'),
+          title: Text('TOKO FURNITURE KEFAS'),
         ),
         body: Center(
           child: data.isNotEmpty
@@ -51,12 +51,13 @@ class _MyAppState extends State<MyApp> {
                   itemBuilder: (context, index) {
                     final item = data[index];
                     return Card(
-                      margin: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+                      margin:
+                          EdgeInsets.symmetric(vertical: 16, horizontal: 16),
                       child: ListTile(
                         leading: Image.network(
                           item["gambar"],
-                          width: 100,
-                          height: 100,
+                          width: 250,
+                          height: 250,
                         ),
                         title: Text(
                           item["nm_barang"],
